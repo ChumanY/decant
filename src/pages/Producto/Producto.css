@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../fonts/SF-Pro.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f7;
+  font-family: "SF Pro", sans-serif;
+}
+
+.productos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f7;
+}
+
+.productos-title {
+  font-family: "SF Pro", sans-serif;
+  color: #1d1d1f;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title-divider {
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background-color: #1e1e1e;
+  margin-bottom: 40px;
+}
+
+.productos-list {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.producto-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 300px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-image 0.3s ease, opacity 0.3s ease;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.producto-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.producto-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.producto-card p {
+  font-family: "SF Pro", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: aliceblue;
+  transition: color 0.5s ease, opacity 0.5s ease;
+}
+
+.producto-card.premium-card:hover {
+  background-image: url("../../../public/images/productPage/background-premium.webp");
+}
+
+.producto-card.premium-card:hover img,
+.producto-card.premium-card:hover p {
+  opacity: 0;
+}
+
+.producto-card.business-card:hover {
+  background-image: url("../../../public/images/productPage/background-business.webp");
+}
+
+.producto-card.business-card:hover img,
+.producto-card.business-card:hover p {
+  opacity: 0;
+}
+
+.producto-card.standard-card:hover {
+  background-image: url("../../../public/images/productPage/background-standard.webp");
+}
+
+.producto-card.standard-card:hover img,
+.producto-card.standard-card:hover p {
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .productos-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto-card {
+    width: 100%;
+    max-width: none;
+  }
+}
