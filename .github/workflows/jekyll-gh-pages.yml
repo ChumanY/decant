@@ -1,34 +1,30 @@
-name: Deploy Site with GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Se ejecuta en los push a la rama principal
-  workflow_dispatch: # Permite la ejecución manual desde GitHub
+    branches:
+      - main
+  workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest # Ejecuta el trabajo en el último Ubuntu disponible
+  deploy:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4 # Revisa el código del repositorio
+        uses: actions/checkout@v4
 
-      - name: Install Dependencies
-        run: npm install # Instala dependencias de Node
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
 
-      - name: Build Project
-        run: npm run build # Ejecuta el script de construcción que debe generar salida en la carpeta `build`
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4 # Acción para desplegar a GitHub Pages
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages # Rama en la que se desplegará el sitio (configura esta rama en la configuración de GitHub Pages)
-          folder: build # Carpeta que se desplegará, que es donde el paso de construcción coloca sus archivos
+          branch: gh-pages  # Asegúrate de que esta rama está correctamente configurada en tu repo
+          folder: build     # Asegúrate de que este es el directorio correcto
+          token: ${{ secrets.GITHUB_TOKEN }}  # Utiliza el token predeterminado de GitHub
