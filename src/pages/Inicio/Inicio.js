@@ -58,8 +58,8 @@ const Inicio = () => {
           </button>
         </div>
         <img
-          src="../../../public/images/inicioPage/inicio1.webp"
-          alt="Fragancias de Victoria"
+          src={`${process.env.PUBLIC_URL}/images/inicioPage/inicio1.webp`}
+          alt="Imagen de inicio"
           className="hero-image"
         />
       </section>
