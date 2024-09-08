@@ -35,13 +35,13 @@
 }
 
 .overlay h1 {
-  font-size: 2vw;
+  font-size: 5vh;
   text-align: center;
   max-width: 80%;
 }
 
 .overlay p {
-  font-size: 1vw;
+  font-size: 2vh;
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
@@ -79,7 +79,7 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 4vh;
   color: #333;
   margin-top: 0.6rem;
 }
@@ -134,8 +134,30 @@
 }
 
 @media (max-width: 768px) {
-  .service-content {
+  .middle-section {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right-text-left-image .image-section,
+  .left-image-right-text .text-section {
+    order: 1;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-section {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image-section {
+    width: 100%;
   }
 
   .service-number {

@@ -1,33 +1,47 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css'; // Asegúrate de crear este archivo para los estilos
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Header.css"; // Asegúrate de tener tu archivo CSS en la ruta correcta
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
+function Header() {
   return (
     <header className="header">
-      <div className="logo">
-        <img src="/path/to/logo.png" alt="Company Logo" />
-        <span>Nombre de la Empresa</span>
-      </div>
-      <div className="menu-icon" onClick={toggleMenu}>
-        &#9776; {/* Ícono de hamburguesa */}
-      </div>
-      <nav className="nav">
-        <ul className={menuOpen ? "show" : ""}>
-          <li><Link to="/" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
-          <li><Link to="/producto" onClick={() => setMenuOpen(false)}>Producto</Link></li>
-          <li><Link to="/sobre-nosotros" onClick={() => setMenuOpen(false)}>Sobre Nosotros</Link></li>
-          <li><Link to="/servicios" onClick={() => setMenuOpen(false)}>Servicios</Link></li>
-        </ul>
+      <h1 className="header-title">Local Face</h1>
+      <nav className="header-nav">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Inicio
+        </NavLink>
+        <NavLink
+          to="/producto"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Productos
+        </NavLink>
+        <NavLink
+          to="/sobre-nosotros"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Sobre Nosotros
+        </NavLink>
+        <NavLink
+          to="/servicios"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Servicios
+        </NavLink>
       </nav>
     </header>
   );
-};
+}
 
 export default Header;

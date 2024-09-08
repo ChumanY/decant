@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Luxurious Elixir Rough",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 2,
+    "name": "The Golden Legacy",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 3,
+    "name": "Luxurious Elixir",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 4,
+    "name": "Luxurious Essence",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 5,
+    "name": "Aurum Aura",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 6,
+    "name": "Gleaming Gilt",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 7,
+    "name": "Gilded Elixir Rough",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 8,
+    "name": "Golden Luminary",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 9,
+    "name": "Aurum Aura",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 10,
+    "name": "Gleaming Gilt",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 11,
+    "name": "Gilded Elixir Rough",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 12,
+    "name": "Golden Luminary",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  },
+  {
+    "id": 13,
+    "name": "Golden Luminary",
+    "image": "/images/productPage/premium-icon.webp",
+    "buttonText": "Learn more"
+  }
+]

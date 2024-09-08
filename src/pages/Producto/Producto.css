@@ -24,6 +24,7 @@
   justify-content: center;
   flex-wrap: wrap; /* Permite que las tarjetas se ajusten si el espacio es limitado */
   margin-top: 100px;
+  margin-bottom: 70px;
 }
 
 @media (max-width: 600px) {
@@ -33,7 +34,7 @@
   }
 
   .producto-card {
-    width: 100%;  
+    width: 100%;
     max-width: none;
   }
 }
@@ -70,6 +71,7 @@
   opacity: 0; /* Inicio en opacidad 0 */
   animation: fadeIn 1s ease forwards; /* Aplica la animación */
   animation-delay: 0.5s; /* Retardo para que no se animen al mismo tiempo que el título */
+  text-decoration: none;
 }
 
 .producto-card:nth-child(1) {
@@ -141,7 +143,7 @@
   }
 
   .producto-card {
-    width: 100%;
+    width: 60%;
     max-width: none;
   }
 }
