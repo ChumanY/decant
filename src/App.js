@@ -20,7 +20,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/decant" element={<Inicio />} />
+        <Route path="/" element={<Inicio />} />
         <Route path="/producto" element={<Producto />} />
         <Route path="/producto/premium" element={<Premium />} />
         <Route path="/producto/standard" element={<Standard />} />
@@ -28,7 +28,7 @@ function App() {
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
         <Route path="/servicios" element={<Servicios />} />
         {/* Catch-all route to redirect to homepage */}
-        <Route path="*" element={<Navigate to="/decant" />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </Router>
