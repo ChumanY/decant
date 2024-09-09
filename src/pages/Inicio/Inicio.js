@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "../Inicio/Inicio.css"; // Asegúrate de que la ruta a los estilos CSS sea correcta
 import { NavLink } from "react-router-dom";
+import inicio1 from "../../images/inicioPage/inicio1.webp";
 
 const Inicio = () => {
   const sectionsRef = useRef([]);
@@ -58,7 +59,7 @@ const Inicio = () => {
           </button>
         </div>
         <img
-          src="/images/inicioPage/inicio1.webp"
+          src={inicio1}
           alt="Fragancias de Victoria"
           className="hero-image"
         />
