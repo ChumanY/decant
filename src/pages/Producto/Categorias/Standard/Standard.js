@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Standard.css";
 import productData from "./productos_standard.json"; // Make sure this path is correct
+import standardIcon from "./../../../../images/productPage/standard-icon.webp";
 
 const Standard = () => {
   const [products, setProducts] = useState([]);
@@ -54,7 +55,7 @@ const Standard = () => {
         {currentProducts.map((product) => (
           <div key={product.id} className="standard-product-card">
             <img
-              src={product.image}
+              src={standardIcon}
               alt={product.name}
               className="standard-product-image"
             />

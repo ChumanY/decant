@@ -9,6 +9,21 @@
   gap: 20px;
 }
 
+@media (max-width: 768px) {
+  .standard-product-buttons {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    gap: 15px; /* Ajusta el espacio entre los botones */
+  }
+}
+
+/* Media query para pantallas de tamaño pequeño */
+@media (max-width: 480px) {
+  .standard-product-buttons {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    gap: 10px; /* Ajusta el espacio entre los botones */
+  }
+}
+
 .standard-product-button {
   border: 2px solid #1d1d1f;
   padding: 10px 20px;

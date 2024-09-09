@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Business.css";
 import productData from "./productos_business.json"; // Make sure this path is correct
+import businessIcon from "./../../../../images/productPage/business-icon.webp";
 
 const Business = () => {
   const [products, setProducts] = useState([]);
@@ -54,7 +55,7 @@ const Business = () => {
         {currentProducts.map((product) => (
           <div key={product.id} className="business-product-card">
             <img
-              src={product.image}
+              src={businessIcon}
               alt={product.name}
               className="business-product-image"
             />

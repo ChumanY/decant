@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "../SobreNosotros/SobreNosotros.css";
+import carousel1 from "../../images/aboutUsPage/carousel1.jpg";
+import carousel4 from "../../images/aboutUsPage/carousel4.jpg";
+import carousel5 from "../../images/aboutUsPage/carousel5.jpg";
 
 const SobreNosotros = () => {
   const configuracion = {
@@ -71,25 +74,13 @@ const SobreNosotros = () => {
       >
         <Slider {...configuracion}>
           <div>
-            <img
-              src="images/aboutUsPage/carousel1.jpg"
-              alt="Imagen 1"
-              className="slider-image"
-            />
+            <img src={carousel1} alt="Imagen 1" className="slider-image" />
           </div>
           <div>
-            <img
-              src="images/aboutUsPage/carousel5.jpg"
-              alt="Imagen 2"
-              className="slider-image"
-            />
+            <img src={carousel5} alt="Imagen 2" className="slider-image" />
           </div>
           <div>
-            <img
-              src="images/aboutUsPage/carousel4.jpg"
-              alt="Imagen 3"
-              className="slider-image"
-            />
+            <img src={carousel4} alt="Imagen 3" className="slider-image" />
           </div>
         </Slider>
       </section>

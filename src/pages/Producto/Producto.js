@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Producto/Producto.css";
+import premium from "../../images/productPage/premium-icon.webp";
+import business from "../../images/productPage/business-icon.webp";
+import standard from "../../images/productPage/standard-icon.webp";
 
 const Productos = () => {
   return (
@@ -10,7 +13,7 @@ const Productos = () => {
       <div className="productos-list">
         <Link to="/producto/premium" className="producto-card premium-card">
           <img
-            src="/images/productPage/premium-icon.webp"
+            src={premium}
             alt="Premium"
             style={{ width: "100px", height: "auto" }}
           />
@@ -18,7 +21,7 @@ const Productos = () => {
         </Link>
         <Link to="/producto/business" className="producto-card business-card">
           <img
-            src="/images/productPage/business-icon.webp"
+            src={business}
             alt="Business"
             style={{ width: "100px", height: "auto" }}
           />
@@ -26,7 +29,7 @@ const Productos = () => {
         </Link>
         <Link to="/producto/standard" className="producto-card standard-card">
           <img
-            src="/images/productPage/standard-icon.webp"
+            src={standard}
             alt="Standard"
             style={{ width: "130px", height: "auto" }}
           />

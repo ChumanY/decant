@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "../Servicios/Servicios.css";
+import service1 from "../../images/servicesPage/service1.jpg";
+import service2 from "../../images/servicesPage/service2.jpg";
 
 const Servicios = () => {
   const sectionsRef = useRef([]);
@@ -78,7 +80,7 @@ const Servicios = () => {
             </p>
           </div>
           <img
-            src="images/servicesPage/service1.jpg"
+            src={service1}
             alt="Descripción de la imagen"
             className="image-section"
           />
@@ -108,7 +110,7 @@ const Servicios = () => {
             </p>
           </div>
           <img
-            src="images/servicesPage/service2.jpg"
+            src={service2}
             alt="Descripción de la imagen"
             className="image-section"
           />

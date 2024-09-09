@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Producto from "./pages/Producto/Producto";
 import SobreNosotros from "./pages/SobreNosotros/SobreNosotros";
 import Servicios from "./pages/Servicios/Servicios";
@@ -22,6 +27,8 @@ function App() {
         <Route path="/producto/business" element={<Business />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
         <Route path="/servicios" element={<Servicios />} />
+        {/* Catch-all route to redirect to homepage */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </Router>

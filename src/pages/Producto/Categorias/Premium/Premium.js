@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Premium.css";
 import productData from "./productos_premium.json"; // Make sure this path is correct
+import premiumIcon from "./../../../../images/productPage/premium-icon.webp";
 
 const Premium = () => {
   const [products, setProducts] = useState([]);
@@ -51,7 +52,7 @@ const Premium = () => {
         {currentProducts.map((product) => (
           <div key={product.id} className="premium-product-card">
             <img
-              src={product.image}
+              src={premiumIcon}
               alt={product.name}
               className="premium-product-image"
             />

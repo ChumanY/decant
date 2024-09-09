@@ -1,7 +1,13 @@
 import React, { useEffect, useRef } from "react";
-import "../Inicio/Inicio.css"; // Asegúrate de que la ruta a los estilos CSS sea correcta
+import "../Inicio/Inicio.css";
 import { NavLink } from "react-router-dom";
 import inicio1 from "../../images/inicioPage/inicio1.webp";
+import inicio3 from "../../images/inicioPage/inicio3.jpg";
+import inicio4 from "../../images/inicioPage/inicio4.webp";
+import inicio5 from "../../images/inicioPage/inicio5.webp";
+import inicio6 from "../../images/inicioPage/inicio6.webp";
+import inicio7 from "../../images/inicioPage/inicio7.webp";
+import inicio8 from "../../images/inicioPage/inicio8.jpg";
 
 const Inicio = () => {
   const sectionsRef = useRef([]);
@@ -107,7 +113,7 @@ const Inicio = () => {
             </p>
           </div>
           <img
-            src="images/inicioPage/inicio3.jpg"
+            src={inicio3}
             alt="Descripción de la imagen"
             className="image-section-inicio"
           />
@@ -122,28 +128,19 @@ const Inicio = () => {
         {/* Título de la sección */}
         <div className="collections-grid">
           <div className="collection-item large">
-            <img
-              src="images/inicioPage/inicio5.webp"
-              alt="Delicias de Diseñador"
-            />
+            <img src={inicio5} alt="Delicias de Diseñador" />
           </div>
           <div className="collection-item medium">
-            <img
-              src="images/inicioPage/inicio7.webp"
-              alt="Esenciales de Viaje"
-            />
+            <img src={inicio7} alt="Esenciales de Viaje" />
           </div>
           <div className="collection-item small">
-            <img src="images/inicioPage/inicio8.jpg" alt="Ocasión Perfecta" />
+            <img src={inicio8} alt="Ocasión Perfecta" />
           </div>
           <div className="collection-item small">
-            <img
-              src="images/inicioPage/inicio4.webp"
-              alt="Serenata Aromática"
-            />
+            <img src={inicio4} alt="Serenata Aromática" />
           </div>
           <div className="collection-item medium">
-            <img src="images/inicioPage/inicio6.webp" alt="Tesoros Vintage" />
+            <img src={inicio6} alt="Tesoros Vintage" />
           </div>
         </div>
       </section>
